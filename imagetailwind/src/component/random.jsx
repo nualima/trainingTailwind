@@ -10,8 +10,8 @@ export default function Random(props){
         <div className="">
 
 
-            <img src={props.image} alt="" className="w-full max-h-96 " width="" />
-            <p className='text-2xl'>{props.title}</p>
+            <img src={props.image} alt="" className="w-72 max-h-96 " width="" />
+            <p className='text-5xl text-center font-semibold'>{props.title}</p>
             <p>{props.comment}  </p>
            
 
