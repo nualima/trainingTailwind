@@ -8,7 +8,7 @@ export default function Header(props) {
     const [actualSelectedLink, setActualSelectedLink] = useState('/home')
 
     return (
-        <div id="header" className="flex flex-col md:flex-row h-auto mr-24 font-semibold mt-12 flex-nowrap">
+        <div id="header" className="flex flex-col md:flex-row h-auto mr-24 font-semibold mt-12 flex-nowrap pl-48">
             <div id="left-header" className="w-2/6	">
                 
 
