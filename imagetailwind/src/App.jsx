@@ -5,11 +5,11 @@ import Random from './component/random';
 
 function App() {
   return (
-    <div id='app' class="">
+    <div id='app' className="">
       <div className="ml-auto mr-auto w-5/6 h-full border-4 border-black ">
         <Header />
         <div id="mainImage ">
-            <img src={`${process.env.PUBLIC_URL}/test2.png`} alt="" className="ml-0 w-full max-h-96 mt-5 " width="" />
+          <img src={`${process.env.PUBLIC_URL}/test2.png`} alt="" className="ml-0 w-full max-h-96 mt-5 " width="" />
         </div>
 
         <div className=" flex mt-10 xl:pl-48 xl:pr-48 basis-auto justify-between w-full flex-col lg:flex-row">

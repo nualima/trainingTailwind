@@ -9,7 +9,7 @@ export default function Random(props) {
 
     return (
 
-        <div className="max-w-xs flex-1 img-random self-center">
+        <div className="max-w-xs flex-1 wekbit-center pb-6 self-center">
 
 
             <img src={props.image} alt="" className=" flex max-w-full sm:self-center h-28 xl:h-auto  mb-3" width="" />

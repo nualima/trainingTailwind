@@ -9,16 +9,19 @@ export default function Accordion(porps) {
     }
 
     return (
-        <div id="accordion">
+        <div id="accordion" className="flex w-44 flex-row-reverse flex-col visible relative md:invisible md:absolute">
             <div>
-                <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs" onClick={() => handleDisplay()}/>
-               <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Label One</label>
+                <input className="absolute opacity-0  " id="tab-multi-one" type="checkbox" name="tabs" onClick={() => handleDisplay()}/>
+               <label className="block p-5 leading-normal cursor-pointer wekbit-right" htmlFor="tab-multi-one">
+               <img src={`${process.env.PUBLIC_URL}/list.png`} alt="" className="ml-0 w-1/3 max-h-28 max-w- mt-5 " width="" />
+
+               </label>
             </div>
-            <div className={`transition-[height] duration-1000  ${display ? " max-h-100 ": "max-h-0 overflow-hidden"}`}>
-                <button id="" className=" bg-gray-300 cursor-pointer p-5 w-full text-left border-none ">Section 1</button>
-                <button id="" className=" bg-gray-300 cursor-pointer p-5 w-full text-left border-none ">Section 2</button>
-                <button id="" className=" bg-gray-300 cursor-pointer p-5 w-full text-left border-none ">Section 3</button>
-                <button id="" className=" bg-gray-300 cursor-pointer p-5 w-full text-left border-none ">Section </button>
+            <div className={`transition-[max-height] ease-in-out duration-100  ${display ? " max-h-96 ": "max-h-0 overflow-hidden"}`}>
+                <button id="" className=" bg-gray-300 cursor-pointer p-5 w-full text-left border-none ">Home</button>
+                <button id="" className=" bg-gray-300 cursor-pointer p-5 w-full text-left border-none ">Services</button>
+                <button id="" className=" bg-gray-300 cursor-pointer p-5 w-full text-left border-none ">About Us</button>
+                <button id="" className=" bg-gray-300 cursor-pointer p-5 w-full text-left border-none ">Contact</button>
             </div>
             
 

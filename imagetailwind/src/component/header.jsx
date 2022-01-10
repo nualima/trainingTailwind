@@ -9,7 +9,7 @@ export default function Header(props) {
     const [actualSelectedLink, setActualSelectedLink] = useState('/home')
 
     return (
-        <div id="header" className="flex flex-col md:flex-row h-auto px-5 lg:pr-24 font-semibold mt-12 flex-nowrap lg:pl-48">
+        <div id="header" className="flex flex-row h-auto px-5 lg:pr-24 font-semibold mt-12 flex-nowrap lg:pl-48 flex-row justify-between">
             <div id="left-header" className="flex w-2/6 flex-col xl:flex-row basis-1/2">
 
 
@@ -29,8 +29,8 @@ export default function Header(props) {
 
 
             </div>
-            <div id="right-header" className="flex-col  mr-0">
-                <span className="flex xl:text-5xl lg:text-xl flex-row-reverse h-4 basis-1/2">08 200 4000</span>
+            <div id="right-header" className="flex-col  mr-0 ">
+                <span className="flex xl:text-5xl lg:text-xl flex-row-reverse h-4 basis-1/2 invisible absolute md:visible md:relative">08 200 4000</span>
 
 
                 <nav className="flex justify-center text-3xl mt-7 lg:justify-between overflow-auto flex-col xl:flex-row">
@@ -40,12 +40,12 @@ export default function Header(props) {
                         ['About Us', '/aboutUs'],
                         ['Contact', '/contact'],
                     ].map(([title, url]) => (
-                        <button onClick={() => setActualSelectedLink(url)} className={` rounded-lg px-3 py-2 font-medium hover:bg-gray-100 hover:text-gray-900 ${(actualSelectedLink === url) ? 'text-sky-500' : 'text-black'}`}>{title}</button>
+                        <button key={title} onClick={() => setActualSelectedLink(url)} className={` rounded-lg px-3 py-2 font-medium hover:bg-gray-100 hover:text-gray-900 invisible absolute md:visible md:relative  ${(actualSelectedLink === url) ? 'text-sky-500' : 'text-black'}`}>{title}</button>
                     ))}
                 </nav>
                 <Accordion />
 
-                
+
 
 
 
